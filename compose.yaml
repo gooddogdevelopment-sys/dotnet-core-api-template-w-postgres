@@ -1,0 +1,6 @@
+﻿services:
+  dotnet-core-api-w-postgres:
+    image: dotnet-core-api-w-postgres
+    build:
+      context: .
+      dockerfile: dotnet-core-api-w-postgres/Dockerfile
