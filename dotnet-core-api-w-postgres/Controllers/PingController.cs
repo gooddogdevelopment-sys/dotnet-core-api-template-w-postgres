@@ -6,7 +6,7 @@ namespace dotnet_core_api_w_postgres.Controllers;
 [Route("[controller]")]
 public class PingController : ControllerBase
 {
-    [HttpGet("Ping")]
+    [HttpGet]
     public ActionResult Ping()
     {
         return Ok("Pong");
