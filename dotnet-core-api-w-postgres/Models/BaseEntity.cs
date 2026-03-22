@@ -2,7 +2,7 @@
 
 namespace dotnet_core_api_w_postgres.Models;
 
-public class BaseEntity
+public abstract class BaseEntity
 {
     [Key]
     public int Id { get; set; }
