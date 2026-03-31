@@ -1,4 +1,4 @@
-﻿using dotnet_core_api_w_postgres.Models;
+using dotnet_core_api_w_postgres.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_core_api_w_postgres.Data;
@@ -15,7 +15,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
         // Apply all IEntityTypeConfiguration<T> classes in this assembly
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
     }
-    
+
     public override Task<int> SaveChangesAsync(CancellationToken ct = default)
     {
         var now = DateTime.UtcNow;
